@@ -1,4 +1,4 @@
-**#🛠️ Medusa Backend on AWS ECS Fargate with Terraform & GitHub Actions**
+# 🛠️ Medusa Backend on AWS ECS Fargate with Terraform & GitHub Actions
 
 This project demonstrates how to deploy a production-ready Medusa.js backend on AWS ECS Fargate, using Terraform for infrastructure provisioning and GitHub Actions for CI/CD.
 
