@@ -1,7 +1,7 @@
 [
   {
     "name": "medusa",
-    "image": "docker.io/ashishb096/medusa:latest",
+    "image": "docker.io/ashishb096/medusa:v4",
     "portMappings": [
       {
         "containerPort": 9000,
