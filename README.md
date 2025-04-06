@@ -54,7 +54,7 @@ This project demonstrates how to deploy a production-ready [Medusa.js](https://m
 
 ```bash
 git clone https://github.com/your-username/medusa-ecs-deploy.git
-cd medusa-ecs-deploy
+cd Server
 ```
 
 ### 2. Set Up Terraform
@@ -84,7 +84,7 @@ GitHub Actions will automatically build and push the Docker image to Docker Hub 
 ```yaml
 # .github/workflows/deploy.yml
 - name: Build & Push Docker Image
-  run: docker build -t ashishb096/medusa:latest .
+  run: docker build -t username/imagename:tag .
 ```
 
 > Ensure your Docker Hub credentials are set in GitHub Secrets.
