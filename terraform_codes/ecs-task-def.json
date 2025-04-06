@@ -1,0 +1,31 @@
+[
+  {
+    "name": "medusa",
+    "image": "docker.io/ashishb096/medusa:latest",
+    "portMappings": [
+      {
+        "containerPort": 9000,
+        "protocol": "tcp"
+      }
+    ],
+    "essential": true,
+    "environment": [
+      {
+        "name": "NODE_ENV",
+        "value": "production"
+      },
+      {
+        "name": "DATABASE_URL",
+        "value": "postgres://postgres:Ashishb096@medusa-db.cheygsiq6z24.ap-south-1.rds.amazonaws.com:5432/medusadb"
+      }
+    ],
+    "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "/ecs/medusa",
+      "awslogs-region": "ap-south-1",
+      "awslogs-stream-prefix": "ecs"
+      }
+    }
+  }
+]
