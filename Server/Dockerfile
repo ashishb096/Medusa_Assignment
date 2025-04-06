@@ -7,11 +7,10 @@ FROM node:22-alpine
 WORKDIR /.medusa/server
 
 # Using COPY to copy all project build files under Medusa folder(Dockerfile is in same folder)
-COPY .medusa/server .
+COPY Server .
 
 # Using RUN command to tell docker to install npm dependencies inside the container and build the project
 RUN npm install --production
-COPY .env .env.production
 COPY docker-entrypoint.sh .
 RUN export NODE_ENV=production
 
